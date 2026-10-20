@@ -1,18 +1,31 @@
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <div>
-      <h1 className="font-bold text-center mt-10">Time to learn some</h1>
-      <h1 className="color italic">Design theory</h1>
-        <p className="text-center mt-10">
-          Design theory is the study of the principles and practices of design. It is a branch of philosophy that deals with the nature of design and the principles of design.
+    <main className="min-h-screen flex flex-col items-center justify-center page-padding">
+      <div className="content-width max-w-3xl text-center">
+        <p className="uppercase tracking-[0.3em] text-muted-foreground mb-6">
+          The fundamentals of design
         </p>
-        <div className="mt-8 flex justify-center gap-4">
-        <Button>Get started</Button>
-        <Button variant="outline">Learn more</Button>
+
+        <h1>
+          The "basics" of
+          <br />
+          <span className="font-serif font-normal italic">
+            Design theory
+          </span>
+        </h1>
+
+        <p className="mt-8 max-w-xl mx-auto text-muted-foreground">
+          Explore the principles behind great design, from visual
+          hierarchy and balance to typography, color, and composition.
+        </p>
+
+        <div className="mt-10 flex flex-wrap justify-center gap-4">
+          <Button>Get started</Button>
+          <Button variant="outline">Learn more</Button>
+        </div>
       </div>
-    </div>
+    </main>
   );
 }
