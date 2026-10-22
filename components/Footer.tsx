@@ -1,4 +1,4 @@
-
+'use client'
 import Link from "next/link";
 import CurrentYear from "@/components/currentYear";
 
@@ -25,19 +25,45 @@ export default function Footer() {
 
           <ul className="mt-5 space-y-3 text-sm text-[#706B60]">
             <li>
-              <Link href="/" className="transition-colors hover:text-[#292820]">
+              <button
+                type="button"
+                onClick={() =>
+                  window.scrollTo({ top: 0, behavior: "smooth" })
+                }
+                className="transition-colors hover:text-[#292820]"
+              >
                 Home
-              </Link>
+              </button>
             </li>
+
             <li>
-              <Link href="/#about" className="transition-colors hover:text-[#292820]">
+              <button
+                type="button"
+                onClick={() =>
+                  document.getElementById("about")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  })
+                }
+                className="transition-colors hover:text-[#292820]"
+              >
                 About
-              </Link>
+              </button>
             </li>
+
             <li>
-              <Link href="/#lessons" className="transition-colors hover:text-[#292820]">
-                Lessons
-              </Link>
+              <button
+                type="button"
+                onClick={() =>
+                  document.getElementById("learn")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  })
+                }
+                className="transition-colors hover:text-[#292820]"
+              >
+                Learn
+              </button>
             </li>
           </ul>
         </div>

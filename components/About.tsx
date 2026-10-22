@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button"
+import Link from "next/link";
 
 export default function About() {
   const videoContainerRef = useRef<HTMLDivElement>(null);
@@ -47,7 +48,12 @@ export default function About() {
             how to create meaningful, engaging experiences.
           </p>
 
-          <Button className={"mt-6"}>Get Started</Button>
+        <Link href="/onboard">
+          <Button className={"mt-6"}>
+              Get Started
+              </Button>
+        </Link>
+
         </div>
 
         <div

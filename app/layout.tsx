@@ -1,9 +1,7 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
-import About from "@/components/About";
-import FinalCTA from "@/components/FinalCTA";
-import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,7 +24,11 @@ export const metadata: Metadata = {
   description: "App to teach design theory",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html
       lang="en"
@@ -34,10 +36,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
         {children}
-        <About />
-        <FinalCTA />
-        <Footer />
-        </body>
+      </body>
     </html>
   );
 }
