@@ -45,7 +45,7 @@ export default function StartResumeButton({
         }
       }
     } catch {
-      // Use the default label if saved data is invalid.
+      // om ingen data finns, visa standardvärdena
     }
 
     setLabel(nextLabel);

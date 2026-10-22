@@ -5,7 +5,6 @@ import Link from "next/link";
 import About from "@/components/About";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
-import GetStartedButton from "@/components/StartResumeButton";
 import StartResumeButton from "@/components/StartResumeButton";
 
 export default function Home() {
