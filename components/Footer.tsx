@@ -75,18 +75,18 @@ export default function Footer() {
 
           <ul className="mt-5 space-y-3 text-sm text-[#706B60]">
             <li>
-              <Link href="/contact" className="transition-colors hover:text-[#292820]">
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link href="/privacy" className="transition-colors hover:text-[#292820]">
-                Privacy policy
-              </Link>
-            </li>
-            <li>
               <Link href="/terms" className="transition-colors hover:text-[#292820]">
                 Terms of use
+              </Link>
+            </li>
+            <li>
+              <Link href="/sources" className="transition-colors hover:text-[#292820]">
+                Source materials
+              </Link>
+            </li>
+            <li>
+              <Link href="/info" className="transition-colors hover:text-[#292820]">
+                Info on the project
               </Link>
             </li>
           </ul>
