@@ -5,6 +5,7 @@ import Link from "next/link";
 import About from "@/components/About";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+import Contact from "@/components/Contact";
 import StartResumeButton from "@/components/StartResumeButton";
 
 export default function Home() {
@@ -45,8 +46,10 @@ export default function Home() {
       </main>
 
       <About />
+      <Contact />
       <FinalCTA />
       <Footer />
+
     </>
   );
 }
